@@ -5,8 +5,12 @@ import { TableCell } from './components/TableCell';
 import { TableCellTextarea } from './components/TableCellTextarea';
 import { TableHeader } from './components/TableHeader';
 import { REG_EXP } from './constants/RegExp';
+import { useTable } from './hooks/useTable';
 
 function DynamicTable() {
+  const {
+    dataTable,
+  } = useTable();
   // const debouncedSaveData = useDebounce((data: FormData) => {
   //   console.log('Сохранение данных:', data);
   // }, 5000);
@@ -18,7 +22,7 @@ function DynamicTable() {
         <tbody>
           <tr className="table-tr">
             <TableCell
-              value="Персонал"
+              value={dataTable.personnel}
               setValue={() => {}}
               regExp={REG_EXP.string}
             />
@@ -30,7 +34,7 @@ function DynamicTable() {
               isCenter
             />
             <TableCellTextarea
-              value = "Комментарий из 3 строк"
+              value={dataTable.comment}
               setValue={() => {}}
               regExp={REG_EXP.string}
               rowSpan={3}

@@ -17,12 +17,12 @@ export function TableCell({
   }
 
   return (
-    <td className={`table-td ${isCenter ? 'table-td__center' : '' }`} rowSpan={rowSpan} colSpan={colSpan}>
+    <td className="table-td" rowSpan={rowSpan} colSpan={colSpan}>
       <input
         type="text"
         value={value}
         onChange={onChangeSetValueHandler}
-        className={`root-field ${isRed ? 'field__red' : '' }`}
+        className={`root-field ${isRed ? 'field__red' : '' } ${isCenter ? 'field__center' : '' }`}
       />
     </td>
   )
