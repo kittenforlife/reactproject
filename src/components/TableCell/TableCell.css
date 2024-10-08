@@ -8,10 +8,17 @@
     text-align: center;
 }
 
-.field__red {
-    color: red;
+.root-field {
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    border: none;
 }
 
-.root-field {
+.root-field:focus {
+    outline: none;
+}
 
+.field__red {
+    color: red;
 }
