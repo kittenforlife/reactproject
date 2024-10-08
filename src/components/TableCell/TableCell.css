@@ -1,0 +1,17 @@
+.table-td {
+    border: 1px solid #b6b6b6;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.table-td__center {
+    text-align: center;
+}
+
+.field__red {
+    color: red;
+}
+
+.root-field {
+
+}

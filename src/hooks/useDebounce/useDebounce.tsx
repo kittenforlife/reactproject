@@ -1,5 +1,5 @@
 import { useRef, useCallback } from 'react';
-import { AnyFunction } from '../utils/IsFunction/isFunction.types';
+import { AnyFunction } from '../../utils/IsFunction/isFunction.types';
 
 export function useDebounce(
   callback: AnyFunction,

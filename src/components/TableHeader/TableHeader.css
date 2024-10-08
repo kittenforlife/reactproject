@@ -1,0 +1,23 @@
+.table-header-container {
+    height: 100px;
+}
+
+.table-header-th {
+    padding: 0 30px;
+    text-align: left;
+    border: 1px solid #b6b6b6;
+    background-color: #E3E3E3;
+}
+
+.table-header-1 {
+    width: 294px;
+}
+.table-header-2 {
+    width: 200px;
+}
+.table-header-3 {
+    width: 811px;
+}
+.table-header-4 {
+    width: 294px;
+}
