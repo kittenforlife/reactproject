@@ -2,6 +2,7 @@
 import './App.css';
 import { Container } from './components/Container';
 import { TableCell } from './components/TableCell';
+import { TableCellTextarea } from './components/TableCellTextarea';
 import { TableHeader } from './components/TableHeader';
 import { REG_EXP } from './constants/RegExp';
 
@@ -28,9 +29,12 @@ function DynamicTable() {
               colSpan={2}
               isCenter
             />
-            <td className="table-td" rowSpan={3}>
-              <textarea defaultValue="Комментарий из 3 строчек" rows={3} style={{resize: 'none',overflowY: 'hidden',width: '70%'}}/>
-            </td>
+            <TableCellTextarea
+              value = "Комментарий из 3 строк"
+              setValue={() => {}}
+              regExp={REG_EXP.string}
+              rowSpan={3}
+            />
           </tr>
 
           <tr className="table-tr">

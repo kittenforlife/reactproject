@@ -8,7 +8,7 @@ export function TableCell({
   rowSpan = 1,
   colSpan = 1,
   isCenter = false,
-  isRed = false,
+  isRed = false, 
   regExp,
 }: TableCellProps) {
 
