@@ -27,7 +27,7 @@ function DynamicTable() {
               regExp={REG_EXP.string}
             />
             <TableCell
-              value="100500 человек"
+              value={dataTable.totalPersonnel}
               setValue={() => {}}
               regExp={REG_EXP.numberAndString}
               colSpan={2}
@@ -43,18 +43,18 @@ function DynamicTable() {
 
           <tr className="table-tr">
             <TableCell
-              value="КТП 2000 321"
+              value={dataTable.ktp}
               setValue={() => {}}
               regExp={REG_EXP.numberAndString}
               rowSpan={2}
             />
             <TableCell
-              value="Работает"
+              value={dataTable.workStatus}
               setValue={() => {}}
               regExp={REG_EXP.string}
             />
             <TableCell
-              value="240"
+              value={dataTable.workingPersonnel}
               setValue={() => {}}
               regExp={REG_EXP.number}
             />
@@ -62,12 +62,12 @@ function DynamicTable() {
 
           <tr className="table-tr">
             <TableCell
-              value="98.4%"
+              value={dataTable.percentage}
               setValue={() => {}}
               regExp={REG_EXP.numberAndDot}
             />
             <TableCell
-              value="Функционирует, но не бьет"
+              value={dataTable.functionalityStatus}
               setValue={() => {}}
               regExp={REG_EXP.all}
               isRed

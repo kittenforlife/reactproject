@@ -9,16 +9,16 @@ export function TableCellTextarea({
   rowSpan = 1,
 }: TableCellTextareaProps) {
 
-  function onChangeSetValueHandler(e: ChangeEvent<HTMLTextAreaElement>) {
+  function onChangeSetValueHandler(e: ChangeEvent<HTMLInputElement>) {
     setValue(e.target.value);
   }
   return (
-    <td className="table-td-area" rowSpan={rowSpan}>
-      <textarea
+    <td className={`table-td-area`} rowSpan={rowSpan}>
+      <input
+        type="text"
         value={value}
         onChange={onChangeSetValueHandler}
-        className="root-field-area"
-        rows={10}
+        className={`root-field-area`}
       />
     </td>
   )
