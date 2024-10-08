@@ -2,6 +2,7 @@
     border: 1px solid #b6b6b6;
     text-align: left;
     padding: 0 30px;
+    resize: vertical;
 }
 
 .table-td-area__center {
