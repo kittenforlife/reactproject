@@ -1,6 +1,7 @@
 import './App.css';
 import { Container } from './components/Container';
 import { TableCell } from './components/TableCell';
+import { TimerContainer } from './components/TimerContainer';
 import { TableCellTextarea } from './components/TableCellTextarea';
 import { TableHeader } from './components/TableHeader';
 import { REG_EXP } from './constants/RegExp';
@@ -92,11 +93,13 @@ function DynamicTable() {
       </table>
       
       {/* todo Для проверки работы. Не забудь вынести в компонент */}
-      <div className="timer-container">
-        {remainingTime !== null && (
-          <div>До превращения в Скуфа осталось {getRemainingTimeSeconds(remainingTime)} секунд</div>
-        )}
-      </div>
+      <TimerContainer
+      />
+      {/* <div className="timer-container">
+    {remainingTime !== null && (
+      <div>До превращения в Скуфа осталось {getRemainingTimeSeconds(remainingTime)} секунд</div>
+    )}
+  </div> */}
     </Container>
   );
 }
