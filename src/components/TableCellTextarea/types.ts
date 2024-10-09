@@ -1,8 +1,9 @@
-import { Dispatch, SetStateAction } from "react";
+import { DataTable } from "../../types/DataTable";
 
 export type TableCellTextareaProps = {
   value: string;
-  setValue: Dispatch<SetStateAction<string>>;
+  setValue: (value: string, key: keyof DataTable) => void;
   regExp: RegExp;
   rowSpan?: number;
+  keyData: keyof DataTable;
 }

@@ -13,32 +13,10 @@
   border: 1px solid #b6b6b6;
 }
 
-/* #myTable {
-  width: 100%; 
-  height: 100%;
-  border-spacing: 0;
+.timer-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
 }
-
-.cell-400 {
-  width: 40%;
-  height: 100px;
-  display: block;
-}
-
-.cell-200 {
-  width: 20%;
-  height: 100px;
-  display: block;
-}
-
-.cell-600 {
-  width: 60%;
-  height: 100px;
-  display: block;
-}
-
-.table th,
-.table td {
-  padding: 0px;
-  border: 1px solid black;
-} */

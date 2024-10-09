@@ -16,8 +16,17 @@
     width: 200px;
 }
 .table-header-3 {
-    width: 811px;
+    width: 298px;
+    border: none;
 }
 .table-header-4 {
     width: 294px;
+}
+.table-header-5 {
+    width: 150px;
+    border: none;
+}
+.table-header-6 {
+    width: 363px;
+    border: none;
 }

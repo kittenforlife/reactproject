@@ -7,18 +7,22 @@ export function TableCellTextarea({
   setValue,
   regExp,
   rowSpan = 1,
+  keyData,
 }: TableCellTextareaProps) {
 
-  function onChangeSetValueHandler(e: ChangeEvent<HTMLInputElement>) {
-    setValue(e.target.value);
+  function onChangeSetValueHandler(e: ChangeEvent<HTMLTextAreaElement>) {
+    const value = e.target.value;
+    if (!regExp.test(value) && value !== '') return;
+    setValue(value, keyData);
   }
+
   return (
-    <td className={`table-td-area`} rowSpan={rowSpan}>
-      <input
-        type="text"
+    <td className="table-td-area" rowSpan={rowSpan}>
+      <textarea
         value={value}
         onChange={onChangeSetValueHandler}
-        className={`root-field-area`}
+        className="root-field-area"
+        rows={10}
       />
     </td>
   )

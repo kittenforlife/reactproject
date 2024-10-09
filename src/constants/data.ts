@@ -8,5 +8,6 @@ export const DATA: DataTable = {
   workStatus: "Работает",
   workingPersonnel: "240",
   percentage: "98.4",
-  functionalityStatus: "Функционирует, но не бьет"
+  functionalityStatus: "Функционирует, но не бьет",
+  spi: "SPI 3432",
 };

@@ -10,10 +10,13 @@ export function TableCell({
   isCenter = false,
   isRed = false, 
   regExp,
+  keyData,
 }: TableCellProps) {
 
   function onChangeSetValueHandler(e: ChangeEvent<HTMLInputElement>) {
-    setValue(e.target.value);
+    const value = e.target.value;
+    if (!regExp.test(value) && value !== '') return;
+    setValue(value, keyData);
   }
 
   return (

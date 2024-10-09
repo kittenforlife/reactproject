@@ -7,4 +7,5 @@ export type DataTable = {
   workingPersonnel: string,
   percentage: string,
   functionalityStatus: string,
+  spi: string,
 }
