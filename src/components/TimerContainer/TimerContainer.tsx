@@ -6,12 +6,22 @@ import { TimerContainerProps } from './types';
 export function TimerContainer({
   remainingTime,
 } :TimerContainerProps) {
-  
-  return (
-    <div className="timer-container">
-    {remainingTime !== null && (
-      <div>До превращения в Скуфа осталось {getRemainingTimeSeconds(remainingTime)} секунд</div>
-    )}
-  </div>
-)
+  function getCorrectEnding(number:number){
+    if (number>4||number===0){
+      return "секунд"
+    }
+    else if(number>1&&number<=4){
+      return "секунды"
+    }
+    else if(number===1){
+      return "секунда"
+    }
+  }
+    return (
+      <div className="timer-container">
+      {remainingTime !== null && (
+        <div>До превращения в скуфа осталось {getRemainingTimeSeconds(remainingTime)} {getCorrectEnding(getRemainingTimeSeconds(remainingTime))}</div>
+      )}
+    </div>
+    )
 }
