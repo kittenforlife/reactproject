@@ -7,6 +7,7 @@ import { TableHeader } from './components/TableHeader';
 import { REG_EXP } from './constants/RegExp';
 import { useTable } from './hooks/useTable';
 import { getRemainingTimeSeconds } from './utils';
+import { ProgressBar } from './components/ProgressBar';
 
 function DynamicTable() {
   const {
@@ -94,6 +95,9 @@ function DynamicTable() {
       
       {/* todo Для проверки работы. Не забудь вынести в компонент */}
       <TimerContainer
+        remainingTime = {remainingTime}
+      />
+      <ProgressBar
         remainingTime = {remainingTime}
       />
       {/* <div className="timer-container">
