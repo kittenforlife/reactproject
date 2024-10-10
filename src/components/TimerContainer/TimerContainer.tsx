@@ -1,12 +1,12 @@
 import './TimerContainer.css';
 import { useTable } from '../../hooks/useTable';
 import { getRemainingTimeSeconds } from '../../utils';
-export function TimerContainer() {
-  const {
-    dataTable,
-    setValue,
-    remainingTime,
-  } = useTable();
+import { TimerContainerProps } from './types';
+
+export function TimerContainer({
+  remainingTime,
+} :TimerContainerProps) {
+  
   return (
     <div className="timer-container">
     {remainingTime !== null && (

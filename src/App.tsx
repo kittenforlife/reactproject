@@ -94,6 +94,7 @@ function DynamicTable() {
       
       {/* todo Для проверки работы. Не забудь вынести в компонент */}
       <TimerContainer
+        remainingTime = {remainingTime}
       />
       {/* <div className="timer-container">
     {remainingTime !== null && (
