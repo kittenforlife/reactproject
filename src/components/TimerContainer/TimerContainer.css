@@ -1,8 +1,10 @@
 .timer-container {
     margin-top: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20px;
+    height: 86px;
     font-size: 26px;
+    gap: 25px;
   }

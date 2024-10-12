@@ -97,9 +97,6 @@ function DynamicTable() {
       <TimerContainer
         remainingTime = {remainingTime}
       />
-      <ProgressBar
-        remainingTime = {remainingTime}
-      />
       {/* <div className="timer-container">
     {remainingTime !== null && (
       <div>До превращения в Скуфа осталось {getRemainingTimeSeconds(remainingTime)} секунд</div>

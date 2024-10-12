@@ -2,6 +2,7 @@ import './TimerContainer.css';
 import { useTable } from '../../hooks/useTable';
 import { getRemainingTimeSeconds } from '../../utils';
 import { TimerContainerProps } from './types';
+import { ProgressBar } from '../ProgressBar';
 
 export function TimerContainer({
   remainingTime,
@@ -17,11 +18,14 @@ export function TimerContainer({
       return "секунда"
     }
   }
-    return (
-      <div className="timer-container">
+  return (
+    <div className="timer-container">
       {remainingTime !== null && (
-        <div>До превращения в скуфа осталось {getRemainingTimeSeconds(remainingTime)} {getCorrectEnding(getRemainingTimeSeconds(remainingTime))}</div>
+        <>
+          <div>До превращения в скуфа осталось {getRemainingTimeSeconds(remainingTime)} {getCorrectEnding(getRemainingTimeSeconds(remainingTime))}</div>
+          <ProgressBar remainingTime={remainingTime}/>
+        </>
       )}
     </div>
-    )
+  )
 }

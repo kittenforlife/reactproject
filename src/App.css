@@ -4,19 +4,10 @@
   font-weight: bold;
 }
 
-
 .table-tr {
   height: 100px;
 }
 
 .table-td {
   border: 1px solid #b6b6b6;
-}
-
-.timer-container {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20px;
 }

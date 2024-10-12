@@ -17,16 +17,18 @@
 }
 .table-header-3 {
     width: 298px;
-    border: none;
+    border-right: none;
 }
 .table-header-4 {
     width: 294px;
 }
 .table-header-5 {
     width: 150px;
-    border: none;
+    border-right: none;
+    border-left: none;
 }
 .table-header-6 {
     width: 363px;
-    border: none;
+    border-right: none;
+    border-left: none;
 }
