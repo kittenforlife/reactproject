@@ -8,16 +8,8 @@ export function ProgressBar({
 } :ProgressBarProps) {
     return (
     <div className="rectangle-flex">
-  <div className="cell cell-first"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell"></div>
-  <div className="cell cell-last"></div>
-</div>
+      <div className="rectangle-gray"></div>
+      <div className="rectangle-yellow"></div>
+    </div>
     )
 }
